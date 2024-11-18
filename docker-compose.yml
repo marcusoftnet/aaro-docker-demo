@@ -1,0 +1,7 @@
+services:
+  app:
+    container_name: node_from_compose
+    # Using our Dockerfile in the same directory
+    build: .
+    ports:
+      - '3001:3000'
