@@ -1,7 +1,9 @@
 services:
   app:
     container_name: node_with_sqlserver_app
-    build: .
+    build:
+      context: .
+      dockerfile: DockerfileBetter
     ports:
       - '3001:3000'
     environment:
