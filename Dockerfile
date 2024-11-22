@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:22.10
 RUN apt-get update
 RUN apt-get install -y nodejs npm
 RUN update-alternatives --install /usr/bin/node node /usr/bin/nodejs 10
